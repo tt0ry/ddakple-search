@@ -3,7 +3,7 @@ import { competitionAllList, competitionExpectedList } from "../../sampleDatas";
 import { useEffect, useState } from "react";
 import SwitchCase from "../SwitchCase";
 
-export default function List({ id }) {
+export default function ImageList({ id }) {
     const [listId, setListId] = useState<number>(id);
 
     useEffect(() => {

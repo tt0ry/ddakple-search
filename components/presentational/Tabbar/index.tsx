@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { tabBarItems } from "../../sampleDatas";
-import List from "../List";
+import ImageList from "../ImageList";
 
 export default function Tabbar() {
     const [selectedId, setSelectedId] = useState<number>(0);
@@ -29,7 +29,7 @@ export default function Tabbar() {
                 ))}
             </ul>
             <div>
-                <List id={selectedId} />
+                <ImageList id={selectedId} />
             </div>
         </div>
     );

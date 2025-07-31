@@ -7,7 +7,7 @@ export default function HomeLayout({
     children: React.ReactNode;
 }) {
     return (
-        <div className="scrollbar-hide">
+        <div>
             <Header />
             <main>{children}</main>
         </div>

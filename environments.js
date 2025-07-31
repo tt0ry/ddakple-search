@@ -1,0 +1,25 @@
+import config from "./app/config.json";
+
+/**
+ * Environments
+ */
+
+const SHARE_MAP = {
+    PROJECT_SYMBOL: "ddakple",
+};
+
+const ENV_MAP = {
+    development: {
+        API_URL: "http://172.30.1.30:8282",
+        REDIRECT_URL: "",
+    },
+    production: {
+        API_URL: "",
+        REDIRECT_URL: "",
+    },
+};
+
+export default {
+    ...SHARE_MAP,
+    ...(ENV_MAP[config.RN_ENV] || ENV_MAP.development),
+};

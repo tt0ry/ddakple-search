@@ -20,10 +20,10 @@ const getListInfo = async ({
     name,
     competitionId,
     category,
-    level,
+    tournamentType,
     source,
 }): Promise<ListResponse> => {
-    const url = `/matchResults?name=${name}&competitionId=${competitionId}&category=${category}&level=${level}&source=${source}`;
+    const url = `/matchResults?name=${name}&competitionId=${competitionId}&category=${category}&tournamentType=${tournamentType}&source=${source}`;
 
     try {
         const { data } = await RestService.get(url);

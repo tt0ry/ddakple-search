@@ -69,10 +69,7 @@ const TableGrid = ({
                         onClick && onClick(event, record, rowIndex),
                 };
             }}
-            rowClassName={(record, index): string =>
-                record.topFlag ? "row-top" : ""
-            }
-            locale={{ emptyText: "데이터가 없습니다." }}
+            locale={{ emptyText: "조회 결과가 없습니다." }}
             expandable={{
                 expandedRowRender: expandableItems,
                 expandedRowKeys: expandedRowKeys,

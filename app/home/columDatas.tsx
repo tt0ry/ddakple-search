@@ -9,10 +9,12 @@ export const columDatas = (filterValue, sortValue) => [
     {
         title: "이름",
         dataIndex: ["user1", "user2"],
-        className: "table-title font-sm",
+        className: "font-sm",
+        width: "9%",
         render: (text, record) => (
             <span>
-                {record.user1}/{record.user2}
+                {record.user1}/<br />
+                {record.user2}
             </span>
         ),
     },
@@ -46,10 +48,16 @@ export const columDatas = (filterValue, sortValue) => [
         filteredValue: filterValue.category || null,
     },
     {
+        title: "연령",
+        dataIndex: "age",
+        className: "font-sm",
+        width: "11%",
+    },
+    {
         title: "급수",
         dataIndex: "level",
         className: "font-sm",
-        width: "10%",
+        width: "8.5%",
         filters: [
             {
                 text: "자강",
@@ -100,7 +108,7 @@ export const columDatas = (filterValue, sortValue) => [
         title: "대회년도",
         dataIndex: "competitionYear",
         className: "font-sm",
-        width: "12%",
+        width: "10.5%",
         key: "competitionYear",
         filters: [
             {
@@ -135,7 +143,7 @@ export const columDatas = (filterValue, sortValue) => [
         title: "최종순위",
         dataIndex: "ranking",
         className: "font-sm",
-        width: "11%",
+        width: "9%",
         render: (text) => {
             if (text === "-") {
                 return text;
@@ -148,7 +156,7 @@ export const columDatas = (filterValue, sortValue) => [
         title: "지역",
         dataIndex: "region",
         className: "font-sm",
-        width: "12.5%",
+        width: "11%",
         render: (text) => (
             <span>{text.toString().replace(REGEX_SPECIAL_CHARACTER, " ")}</span>
         ),
@@ -157,7 +165,7 @@ export const columDatas = (filterValue, sortValue) => [
         title: "출처",
         dataIndex: "source",
         className: "font-sm",
-        width: "12%",
+        width: "11%",
     },
 ];
 
@@ -199,19 +207,22 @@ export const expandableItems = (resultListInfo) => (record) => {
                                                 className="border-b border-gray-200 py-4"
                                             >
                                                 <div className="flex justify-center items-center">
-                                                    <p className="text-sm font-semibold">
+                                                    <p className="font-base mr-5 font-semibold">
+                                                        {item.tournamentType}
+                                                    </p>
+                                                    <p className="font-base font-semibold">
                                                         {item.date.replace(
                                                             REGEX_DATE,
                                                             DATE_REPLACE_FORMAT
                                                         )}{" "}
                                                         {item.time}
                                                     </p>
-                                                    <p className="ml-5 font-bold">
+                                                    <p className="font-base ml-5 font-bold">
                                                         {item.courtNum}코트{" "}
                                                         {item.num}번
                                                     </p>
                                                 </div>
-                                                <div className="grid grid-cols-3 gap-x-8 w-full text-center pt-2">
+                                                <div className="grid grid-cols-3 gap-x-8 w-full text-center pt-5">
                                                     <div>
                                                         <p className="font-bold">
                                                             {

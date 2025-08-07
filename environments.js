@@ -10,7 +10,7 @@ const SHARE_MAP = {
 
 const ENV_MAP = {
     development: {
-        API_URL: "http://3.39.136.24:8282/",
+        API_URL: "http://api.ddakple.com",
         REDIRECT_URL: "",
     },
     production: {

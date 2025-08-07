@@ -108,7 +108,7 @@ export const columDatas = (filterValue, sortValue) => [
         title: "대회년도",
         dataIndex: "competitionYear",
         className: "font-sm",
-        width: "10.5%",
+        width: "11%",
         key: "competitionYear",
         filters: [
             {

@@ -10,7 +10,7 @@ const SHARE_MAP = {
 
 const ENV_MAP = {
     development: {
-        API_URL: "http://172.30.1.30:8282",
+        API_URL: "http://3.39.136.24:8282/",
         REDIRECT_URL: "",
     },
     production: {

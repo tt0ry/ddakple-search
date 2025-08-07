@@ -26,28 +26,26 @@
 }
 
 /* antd custom css */
-:where(.css-dev-only-do-not-override-pjilya).ant-table-wrapper
+.ant-table-content
     .ant-table-ping-right:not(.ant-table-has-fix-right)
     .ant-table-container::after {
     box-shadow: none;
 }
-:where(.css-dev-only-do-not-override-pjilya).ant-table-wrapper
+.ant-table-content
     .ant-table-ping-left:not(.ant-table-has-fix-left)
     .ant-table-container::before {
     box-shadow: none;
 }
-:where(.css-dev-only-do-not-override-pjilya).ant-table-wrapper
-    .ant-table-pagination.ant-pagination {
+.ant-table-content .ant-table-pagination.ant-pagination {
     margin: 30px 0 20px 0;
 }
-:where(.css-dev-only-do-not-override-pjilya).ant-pagination
-    .ant-pagination-options {
+.ant-pagination .ant-pagination-options {
     display: none;
 }
-:where(.css-dev-only-do-not-override-pjilya).ant-table-wrapper .ant-table-row {
+.ant-table-content .ant-table-row {
     cursor: pointer;
 }
-:where(.css-dev-only-do-not-override-pjilya).ant-table-wrapper
+.ant-table-content
     table
     .ant-table-expanded-row
     .ant-table-cell
@@ -55,7 +53,7 @@
     li:last-child {
     border: none;
 }
-:where(.css-dev-only-do-not-override-pjilya).ant-table-wrapper
+.ant-table-content
     table
     .ant-table-expanded-row
     .ant-table-cell
@@ -63,16 +61,10 @@
     li:first-child {
     padding-top: 0;
 }
-:where(.css-dev-only-do-not-override-pjilya).ant-table-wrapper .ant-table-cell,
-:where(.css-dev-only-do-not-override-pjilya).ant-table-wrapper
-    .ant-table-thead
-    > tr
-    > th {
+.ant-table-content .ant-table-cell,
+.ant-table-content .ant-table-thead > tr > th {
     padding: 12px 12px;
 }
-:where(.css-dev-only-do-not-override-pjilya).ant-table-wrapper
-    .ant-table-tbody
-    > tr
-    > td {
+.ant-table-content .ant-table-tbody > tr > td {
     padding: 12px 12px;
 }

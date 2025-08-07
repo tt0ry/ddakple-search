@@ -26,18 +26,30 @@
 }
 
 /* antd custom css */
-.ant-table-content
-    .ant-table-ping-right:not(.ant-table-has-fix-right)
-    .ant-table-container::after {
+.ant-table-wrapper .ant-table.ant-table-ping-right .ant-table-container::after {
     box-shadow: none;
 }
-.ant-table-content
-    .ant-table-ping-left:not(.ant-table-has-fix-left)
-    .ant-table-container::before {
+.ant-table-wrapper .ant-table.ant-table-ping-left .ant-table-container::before {
     box-shadow: none;
 }
-.ant-table-content .ant-table-pagination.ant-pagination {
-    margin: 30px 0 20px 0;
+.ant-table-wrapper
+    .ant-table-container
+    table
+    > thead
+    > tr:first-child
+    > *:first-child {
+    border-start-start-radius: 0;
+}
+.ant-table-wrapper
+    .ant-table-container
+    table
+    > thead
+    > tr:first-child
+    > *:last-child {
+    border-start-end-radius: 0;
+}
+.ant-table-wrapper .ant-table-pagination.ant-pagination {
+    margin: 40px 0 20px 0;
 }
 .ant-pagination .ant-pagination-options {
     display: none;

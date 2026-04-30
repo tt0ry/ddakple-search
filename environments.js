@@ -15,7 +15,7 @@ const ENV_MAP = {
         API_KEY: "xK9#mP2qL8vN5wR4tH7yJ3bF6cD1eA0z",
     },
     production: {
-        API_URL: "",
+        API_URL: "https://api.ddakple.com",
         REDIRECT_URL: "",
         API_KEY: "xK9#mP2qL8vN5wR4tH7yJ3bF6cD1eA0z",
     },

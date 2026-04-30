@@ -45,6 +45,9 @@ requestQueue = [];
 api = axios.create({
     baseURL: env.API_URL,
     validateStatus: (status: number): boolean => status < 400,
+    headers: {
+        "X-API-KEY": env.API_KEY,
+    },
 });
 
 const RestService = {
